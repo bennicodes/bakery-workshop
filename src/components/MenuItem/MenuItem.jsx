@@ -1,9 +1,15 @@
-import React from 'react'
+import styles from "./MenuItem.module.css";
 
-const MenuItem = () => {
+const MenuItem = ({ item, cartContent, setCartContent }) => {
+  console.log(item);
+
   return (
-    <div>MenuItem</div>
-  )
-}
+    <div className={styles.menuItem}>
+      <img src={item.imageUrl} />
 
-export default MenuItem
+      <button>Add to cart</button>
+    </div>
+  );
+};
+
+export default MenuItem;

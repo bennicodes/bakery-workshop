@@ -1,9 +1,8 @@
-import React from 'react'
+import styles from "./CounterButton.module.css";
+
 
 const CounterButton = () => {
-  return (
-    <div>CounterButton</div>
-  )
-}
+  return <div>CounterButton</div>;
+};
 
-export default CounterButton
+export default CounterButton;
